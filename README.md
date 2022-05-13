@@ -9,4 +9,4 @@ kubectl apply -f jenkins-sa.yaml
 helm install jenkins ./jenkins/ --namespace jenkins
 ```
 
-# IMPORTANT! After succesfull install remove block with init container (name: "init") from StatefulSet.
+# IMPORTANT! After succesfull install remove block with init containers (name: "init" and "config-reload") from StatefulSet.
